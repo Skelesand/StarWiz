@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://qctecngmditr"]
+
+[ext_resource type="Script" uid="uid://cvm8p0xec8m7l" path="res://scripts/main.gd" id="1_o5qli"]
+[ext_resource type="Script" uid="uid://bjb2tsplxv2d8" path="res://scripts/draw_layer.gd" id="2_0wfyh"]
+[ext_resource type="Script" uid="uid://vtkvo80e3o15" path="res://scripts/selection_indicator.gd" id="3_sugp2"]
+
+[node name="Main" type="Node2D" unique_id=184128977]
+script = ExtResource("1_o5qli")
+
+[node name="StarField" type="Node2D" parent="." unique_id=889492528]
+
+[node name="DrawLayer" type="Node2D" parent="." unique_id=1157714713]
+script = ExtResource("2_0wfyh")
+
+[node name="UILayer" type="CanvasLayer" parent="." unique_id=249185771]
+
+[node name="SelectionIndicator" type="Node2D" parent="." unique_id=951327228]
+script = ExtResource("3_sugp2")

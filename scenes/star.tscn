@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://28qn11b5ujw4"]
+
+[ext_resource type="Script" uid="uid://d2pjx6p3src1r" path="res://scripts/star.gd" id="1_mcqwg"]
+[ext_resource type="Texture2D" uid="uid://cexrnv4n1qv1s" path="res://assets/sprites/falling-pixel-star-pro-pixel-art-star-ab6fed764d6bcb9903bd25c2da328c85.png" id="2_j6vao"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_mcqwg"]
+radius = 12.0
+
+[node name="Star" type="Area2D" unique_id=1280337853]
+script = ExtResource("1_mcqwg")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=267307329]
+scale = Vector2(0.05759766, 0.05759766)
+texture = ExtResource("2_j6vao")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=914389951]
+shape = SubResource("CircleShape2D_mcqwg")
